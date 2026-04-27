@@ -15,20 +15,23 @@ export const rotatingRoles = [
   'Developpeur Frontend React',
   'Developpeur Mobile React Native',
   "Createur d'interfaces performantes",
+  'Passionné par les produits numériques',
+  'Spécialiste en design d\'expérience utilisateur',
+  'Développeur orienté produit',
 ]
 
 export const stats = [
   { value: '5+', label: 'projets marquants' },
   { value: 'React', label: 'stack frontend principale' },
-  { value: 'Lome', label: 'base et disponibilité' },
-  { value: 'Nova', label: 'experience santé numerique' },
+  { value: 'Lomé', label: 'basé à Lomé et disponibilité' },
+  { value: 'Nova Health', label: 'expérience santé numérique' },
 ]
 
 export const featureCards = [
   {
     icon: Rocket,
     title: 'Frontend moderne',
-    text: "Interfaces rapides, responsives et pensees pour l'utilisateur final.",
+    text: "Interfaces rapides, responsives et pensées pour l'utilisateur final.",
   },
   {
     icon: Smartphone,
@@ -38,11 +41,11 @@ export const featureCards = [
   {
     icon: Layers3,
     title: 'Integration full-stack',
-    text: "Connexion propre avec API, gestion d'etat et composants reutilisables.",
+    text: "Connexion propre avec API, gestion d'état et composants reutilisables.",
   },
 ]
 
-export const heroTechStack = ['React', 'React Native', 'Tailwind', 'Laravel', 'FastAPI']
+export const heroTechStack = ['React', 'React Native', 'Tailwind', 'Laravel','PostgreSQL', 'Python']
 
 export const projects = [
   {
@@ -220,12 +223,10 @@ export const skillLevels = [
   ['React / React Native', '90%'],
   ['UI responsive', '92%'],
   ['Laravel / API', '80%'],
-  ['Analyse de donnees', '72%'],
   ['Python', '85%'],
   ['JavaScript', '88%'],
   ['SQL', '75%'],
   ['Git', '80%'],
-  ['Docker', '50%'],
   ['Machine Learning', '60%'],
   ['Deep Learning', '55%'],
   ['Power BI', '70%'],

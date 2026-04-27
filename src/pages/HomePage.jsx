@@ -73,7 +73,7 @@ export function HomePage() {
               alt="Portrait de Josue Awougno"
               className="mb-6 h-60 w-60 rounded-[2rem] border border-white/10 object-cover object-top shadow-glow"
             />
-            <p className="text-sm uppercase tracking-[0.3em] text-accent">Base a Lome - Togo</p>
+            <p className="text-sm uppercase tracking-[0.3em] text-accent">Basé à Lomé - Togo</p>
             <h2 className="mt-3 text-3xl font-extrabold text-white">React - React Native - Laravel</h2>
             <p className="mt-4 max-w-md text-base leading-7 text-slate-300">
               Developpeur orienté produit, passionné par les interfaces utiles, les parcours clairs et les applications qui ont un impact concret.
