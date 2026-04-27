@@ -1,16 +1,132 @@
-# React + Vite
+# Portfolio React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio personnel developpe avec React, Vite et Tailwind CSS.
 
-Currently, two official plugins are available:
+Le projet presente :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- une page d'accueil avec presentation rapide
+- une page `A propos`
+- une page `CV`
+- une page `Realisations`
+- une page `Contact` avec formulaire EmailJS
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router
+- Vite
+- Tailwind CSS
+- Lucide React
+- EmailJS
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+## Lancer le projet
+
+```bash
+npm run dev
+```
+
+Build de production :
+
+```bash
+npm run build
+```
+
+Preview du build :
+
+```bash
+npm run preview
+```
+
+## Structure
+
+```text
+src/
+  assets/        images utilisees
+  components/    composants reutilisables
+  data/          donnees du portfolio
+  pages/         pages de l'application
+  App.jsx        routes principales
+  main.jsx       point d'entree React
+  index.css      styles globaux
+```
+
+## Personnalisation
+
+La plupart des contenus sont centralises dans :
+
+- `src/data/siteData.js`
+
+Tu peux y modifier :
+
+- les informations du hero
+- les statistiques
+- les competences
+- les experiences
+- les projets
+- les infos de contact
+
+## Ajouter ou modifier un projet
+
+Chaque projet est defini dans `src/data/siteData.js`.
+
+Exemple :
+
+```js
+{
+  title: 'Nom du projet',
+  description: 'Description du projet',
+  stack: ['React', 'API'],
+  highlight: 'Optionnel',
+  links: [
+    { label: 'Demo', href: 'https://example.com' },
+    { label: 'GitHub', href: 'https://github.com/example' },
+  ],
+}
+```
+
+La section `Realisations` est volontairement sans galerie photo. Les cartes affichent le texte, la stack et les liens du projet.
+
+## Formulaire de contact avec EmailJS
+
+Le formulaire utilise `@emailjs/browser`.
+
+1. Copier `.env.example` en `.env`
+2. Remplir les variables suivantes :
+
+```env
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+```
+
+Variables envoyees par le formulaire :
+
+- `from_name`
+- `reply_to`
+- `subject`
+- `message`
+- `to_email`
+
+Le composant concerne est :
+
+- `src/components/ContactForm.jsx`
+
+## Pages principales
+
+- `/` : accueil
+- `/a-propos` : presentation
+- `/cv` : parcours et competences
+- `/realisations` : projets
+- `/contact` : contact
+
+## Notes
+
+- le projet utilise une organisation simple avec pages et composants separes
+- le contenu textuel est deja decouple de `App.jsx`
+- seuls les assets encore utilises ont ete conserves
