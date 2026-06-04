@@ -200,11 +200,17 @@ export const experiences = [
 
 export const education = [
   {
-    period: '2025',
+    period: '2026',
     title: 'Certification en Big Data et Machine Learning',
     school: 'FUN MOOC',
     text: 'Formation en ligne couvrant les concepts mathématiques et informatiques fondamentaux du big data, machine learning et deep learning avec des applications pratiques.',
 
+  },
+  {
+    period: '2026',
+    title: 'Parcours Data Engineering',
+    school: 'DataCamp  (Boursier Ishero)',
+    text: 'Formation pratique en data engineering, couvrant les pipelines de données,les architectures, l\'intégration, le stockage et les outils modernes pour la gestion de données à grande échelle tel que Apache Spark et AWS.',
   },
   {
     period: '2024 - 2025',
