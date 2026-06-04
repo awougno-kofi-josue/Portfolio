@@ -200,6 +200,13 @@ export const experiences = [
 
 export const education = [
   {
+    period: '2025',
+    title: 'Certification en Big Data et Machine Learning',
+    school: 'FUN MOOC',
+    text: 'Formation en ligne couvrant les concepts mathématiques et informatiques fondamentaux du big data, machine learning et deep learning avec des applications pratiques.',
+
+  },
+  {
     period: '2024 - 2025',
     title: 'Developpement web et mobile full-stack',
     school: 'D-CLIC, OIF',
