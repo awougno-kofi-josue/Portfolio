@@ -77,8 +77,7 @@ Le template EmailJS doit accepter les variables `to_email`, `from_name`, `reply_
 - Balises meta dans `index.html` (description, Open Graph, Twitter Card, canonical)
   et schéma `Person` en JSON-LD.
 - `public/robots.txt` et `public/sitemap.xml` sont en place.
-- **À faire avant mise en ligne** : remplacer `https://www.kofiawougno.com/` par le
-  vrai nom de domaine dans `index.html`, `public/robots.txt` et `public/sitemap.xml`.
+- Le domaine canonique utilisé pour le sitemap, robots, canonical et Open Graph est `https://kofi-portfolio.pages.dev/`.
 - Le site est une SPA côté client. Pour une indexation optimale au-delà des balises
   meta statiques, un hébergeur avec pré-rendu (Vercel, Netlify avec prerendering, ou
   un passage à Next.js plus tard) améliorera l'indexation.
