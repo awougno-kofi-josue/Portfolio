@@ -9,8 +9,8 @@ const symbols = [
   { glyph: '∇', top: '68%', left: '14%', size: '3rem', delay: '2s' },
   { glyph: '∑', top: '24%', left: '82%', size: '3.4rem', delay: '1s' },
   { glyph: '∫', top: '72%', left: '86%', size: '2.6rem', delay: '3s' },
-  { glyph: 'π', top: '46%', left: '92%', size: '2rem', delay: '4.5s' },
-  { glyph: 'λ', top: '10%', left: '48%', size: '1.8rem', delay: '2.5s' },
+  { glyph: 'π', top: '66%', left: '92%', size: '2rem', delay: '4.5s' },
+  { glyph: 'λ', top: '30%', left: '48%', size: '1.8rem', delay: '2.5s' },
 ]
 
 export function Hero({ onNavigate }) {
