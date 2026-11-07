@@ -1,0 +1,19 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import { LanguageProvider } from './i18n/LanguageContext.jsx'
+import { ThemeProvider } from './i18n/ThemeContext.jsx'
+import './styles/tokens.css'
+import './styles/global.css'
+import './styles/layout.css'
+import './styles/sections.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <ThemeProvider>
+      <LanguageProvider>
+        <App />
+      </LanguageProvider>
+    </ThemeProvider>
+  </React.StrictMode>,
+)

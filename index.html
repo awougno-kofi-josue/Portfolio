@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1915" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('kya-theme')
+          var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+          document.documentElement.setAttribute('data-theme', theme)
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark')
+        }
+      })()
+    </script>
+
+    <title>Kofi Yosua Awougno · Applied Mathematics &amp; Software</title>
+    <meta
+      name="description"
+      content="Kofi Yosua Awougno, MS Applied Mathematics candidate (COMSATS University Islamabad). Viscous fluid mechanics, numerical analysis, epidemiological modeling, and full-stack development (Python, React, Laravel)."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Kofi Yosua Awougno" />
+    <link rel="canonical" href="https://www.kofiawougno.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kofi Yosua Awougno · Applied Mathematics & Software" />
+    <meta
+      property="og:description"
+      content="Applied mathematics, viscous fluid mechanics, numerical analysis, and full-stack development. Portfolio, research and selected projects."
+    />
+    <meta property="og:url" content="https://www.kofiawougno.com/" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content="/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Kofi Yosua Awougno, applied mathematics, scientific computing and software." />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kofi Yosua Awougno · Applied Mathematics & Software" />
+    <meta
+      name="twitter:description"
+      content="Applied mathematics, viscous fluid mechanics, numerical analysis, and full-stack development."
+    />
+    <meta name="twitter:image" content="/og-cover.png" />
+    <meta name="twitter:image:alt" content="Kofi Yosua Awougno, applied mathematics, scientific computing and software." />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%2315312a%22/><text x=%2250%22 y=%2266%22 font-size=%2258%22 text-anchor=%22middle%22 fill=%22%233f8fc0%22 font-family=%22serif%22>K</text></svg>" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kofi Yosua Awougno",
+        "url": "https://www.kofiawougno.com/",
+        "jobTitle": "Applied Mathematics Student & Software Developer",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "COMSATS University Islamabad"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Lomé"
+        },
+        "email": "mailto:kofiyosuaawougno@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Islamabad",
+          "addressCountry": "PK"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/kofi-yosua-awougno-29014a246/",
+          "https://github.com/awougno-kofi-josue"
+        ],
+        "knowsAbout": [
+          "Applied Mathematics",
+          "Viscous Fluid Mechanics",
+          "Numerical Analysis",
+          "Epidemiological Modeling",
+          "Data Science",
+          "React",
+          "Laravel",
+          "Python"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      Kofi Yosua Awougno, MS Applied Mathematics candidate at COMSATS University Islamabad,
+      BSc in Mathematics from the University of Lomé. Viscous fluid mechanics, numerical
+      analysis, epidemiological modeling, data science and full-stack development. Enable
+      JavaScript to view the full portfolio.
+    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
